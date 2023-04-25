@@ -1,14 +1,14 @@
 body{
-  
+  display: grid;
 }
 #root {
   width: 1500px;
   margin: 0 auto;
   height: 720px;
-  
+  display: grid;
   
 }
-.Maincontainer {
+#root{
 
   height: 720px;
   display: grid;
@@ -95,6 +95,9 @@ body{
   display: flex;
   align-items: center;
 }
+.länkar.active {
+  color:blueviolet
+}
 #Hemcontainer{
 
   grid-column-start: 1;
@@ -124,44 +127,237 @@ font-size: 30px;
 
 
 }
-#Projectcontainer{
+#hemcontainertitel{
+  
+  margin: 0;
+  margin-top: 100px;
+}
+#hemcontainertext{
+  margin: 0;
+}
+#projectknapp{
+  margin-top: 100px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  background-color: blueviolet;
+  color: white;
+  height: 50px;
+  width: 150px;
+  font-weight: bold;
+}
 
+#techstackdiv{
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#Projectcontainer{
     grid-column-start: 1;
   grid-column-end: 13;
   grid-row-start: 2;
   grid-row-end: 8;
   margin-left: 10px;
   margin-right: 10px;
-  
-  
-  
-  overflow: hidden;
-  background: url(./img/v748-toon-103.jpg);
-  /*background-image: url(../img/v748-toon-103.jpg);*/
+  height: 580px;
+
   background-size: cover;
-  
-  
-  
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  
   font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+
+  scroll-behavior: smooth;
+}
+#sidescroll {
+
+  scroll-snap-align: start;
+  
+  width: 100%;
+  height: 580px;
+  overflow-x: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scroll-snap-points-x: repeat(100%);
+  scroll-snap-destination: 0% 0%;
+}
+/* Change the color of the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: blueviolet;
+  opacity: 0.5;
+  border-radius: 10px;
+  
+}
+
+/* Change the color of the scrollbar track */
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+/* Change the width of the scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+.projectsection2 {
+  scroll-snap-align: start;
+
+  background: url(./img/v748-toon-103.jpg);
+  background-size: cover;
+ width: 1500px;
+ height: 100%;
+ flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#projektcontainer1{
+
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+  width: 100%;
+  margin-bottom: 100px;
+
+  
+}
+#välkommendiv{
+  
+ 
+  
+}
+#projektbild{
+  margin-top: 150px;
+  height: 300px;
+  font-size: 30px;
+}
+
+  
+#projekth1{
+  margin: 0;
+  font-size: 60px;
+  
+
+ 
+  text-align: center;  
+  }
+  
+  #projektinfo{
+   
+    font-size: 20px;
+   
+ 
+  
+    width: 700px;
+    
+
+  }
+
+  .sliderdiv{
+ 
+  
+    
+
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 100px;
+  
   
   
   
   }
-  #slider{
-    border: 8px solid black;
-    width: 800px;
-    border-radius: 20px;
+  .slider{
+    width: 750px;
+   
+   
   }
+  #litenbild{
+    object-fit: cover;
+  }
+  .slidertext{
+    color: #000000;
+    width: 400px;
+    font-size: 17px;
+  }
+  #sliderdiv2{
+   
+    border:1px solid black;
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 9;
+    grid-row-end: 12;
+  }
+  #sliderdivtext2{
+    border: 1px solid black;
+    grid-column-start: 8;
+    grid-column-end: 13;
+    grid-row-start: 9;
+    grid-row-end: 12;
+  }
+  #sliderdiv3{
+   
+    border:1px solid black;
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 13;
+    grid-row-end: 16;
+  }
+  #sliderdivtext3{
+    border: 1px solid black;
+    grid-column-start: 8;
+    grid-column-end: 13;
+    grid-row-start: 13;
+    grid-row-end: 16;
+  }
+  #sliderdiv4{
+   
+    border:1px solid black;
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 16;
+    grid-row-end: 19;
+  }
+  #sliderdivtext4{
+    border: 1px solid black;
+    grid-column-start: 8;
+    grid-column-end: 13;
+    grid-row-start: 16;
+    grid-row-end: 19;
+  }
+  #sliderdiv5{
+  
+    border: 1px solid black;
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 19;
+    grid-row-end: 21;
+    
+  }
+  #sliderdivtext5{
+    border: 1px solid black;
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 19;
+    grid-row-end: 21;
+  }
+ 
 
 .sverigebild{
   transition: 0s;
   background-image: url(./src/img/språkknapp\ sverige.png);
+  
 }
 .englandbild{
 
@@ -172,25 +368,23 @@ font-size: 30px;
 .fadein {
   transition: opacity 5s ease-in-out;
   opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-#fadein2 {
-  transition: opacity 5s ease-in-out;
-  opacity: 1;
-}
+
 
 
 #språkknapp{
 
 border: none;
-
-margin-right: 40px;
-margin-top: -150px;
-
-height: 20px;
-width: 30px;
-transition: all 2s;
-transition: all 2s ease-in-out;
-align-self:last baseline;
+position: absolute;
+  top: 200px;
+  right: 70px;
+  border: none;
+  height: 20px;
+  width: 30px;
+  background-size: cover;
 
 
 
@@ -201,84 +395,221 @@ background-size: cover;
 .språkknapp:hover {
 opacity: 0.7;
 scale: 0.9;
-transition: 1s;
-}
-p {
-  color: rgb(83, 83, 83);
-}
-
-
-
-#projectknapp {
-  
-  margin-top: 20px;
-  background-color: blueviolet;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  padding-top: 10px;
-  border: none;
-  font-size: 25px;
-  font-weight: bold;
-  width: 200px;
-  height: 50px;
-  
 
 }
+i{
+  color: #525252;
+  font-size: 15px;
+}
+
+
+
+
 
 #projectknapp:hover {
   opacity: 0.7;
   scale: 0.9;
   transition: 1s;
 }
+#contactdiv{
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 2;
+  grid-row-end: 8;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+  
+  
+  overflow: hidden;
+  
+  /*background-image: url(../img/v748-toon-103.jpg);*/
+  background-size: cover;
+  
+  
+  
+  
+  display: flex;
+  align-items: center;
+ 
+  flex-direction: column;
+  
+ 
+  
+  }
+#aboutdiv{
+  
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 2;
+  grid-row-end: 8;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 580px;
+
+  background-size: cover;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+
+  scroll-behavior: smooth;
+}
+#sidescroll2 {
+
+  scroll-snap-align: start;
+  
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scroll-snap-points-x: repeat(100%);
+  scroll-snap-destination: 0% 0%;
+}
+  
+ 
+ 
+.aboutsection{
+
+ 
+  
+  scroll-snap-align: start;
+
+  background: url(./img/v748-toon-103.jpg);
+  background-size: cover;
+ width: 1500px;
+ height: 100%;
+
+ flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+#abouttextdiv{
+  
+
+  
+
+  width: 100%;
+  height: 100%;
+  gap: 50px;
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+  justify-content: space-between;
+  
+}
+#språk{
+  border: 1px solid black;
+  
+  font-size: 20px;
+  width: 300px;
+  margin-right: 100px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#aboutsection2{
+  width: 100%;
+  
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+ 
+}
+#aboutheader{
+  border: 1px solid black;
+  margin: 0;
+ 
+  
+}
+#abouttext{
+ 
+  font-size: 20px;
+  margin: 0;
+}
+
+ #arbetserfarenhetdiv{
+    border: 1px solid black;
+   ;
+    width: 50%;
+  }
+  #utbildningsdiv{
+
+
+  }
+  .arbeteserfanhet{
+margin: 0;
+}
+.arbete{
+  margin: 0;
+ 
+}
+
+.utbildningar{
+
+  margin: 0;
+  
+}
+.utbildning{
+margin:0;
+}
+
 #footer {
 
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 3;
-  grid-row-end: 6;
+  position: fixed;
+  bottom: 200px; /* distance from the bottom edge of the viewport */
+  left: 10px; /* distance from the left edge of the viewport */
   width: 85px;
+  height: 210px;
   border-radius: 0px 20px 20px 0px;
-
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   font-size: 40px;
-  position: absolute;
-  top: 370px;
-  left: 8px;
   background-color: white;
-
 
 }
 
-.fa {
+.fa-github, .fa-instagram, .fa-linkedin {
 
   margin: 10px;
-
-
-
   width: 45px;
   height: 45px;
-
-
   text-align: center;
-
   text-decoration: none;
 
 
 }
 
 
-.fa:hover {
+ .fa-linkedin:hover {
+  opacity: 0.7;
+  scale: 1.2;
+  transition: 1s;
+}
+.fa-instagram:hover {
+  opacity: 0.7;
+  scale: 1.2;
+  transition: 1s;
+}
+.fa-github:hover{
   opacity: 0.7;
   scale: 1.2;
   transition: 1s;
 }
 
 .fa-linkedin {
-  background: #000000;
+  background: #070265;
   color: white;
   border-radius: 20%;
   height: 40px;
@@ -289,8 +620,32 @@ p {
 
   color: rgb(5, 5, 5);
 }
+#github{
+
+  color: rgb(5, 5, 5);
+font-size: 30px;
+padding: 0;
+}
 
 .fa-instagram {
 
-  color: rgb(8, 8, 8);
+  color: rgb(0, 0, 0);
+}
+
+
+#kontaktinfo{
+  width: 1200px;
+  height: 200px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 20px;
+  gap: 40px;
+}
+.fa-phone, .fa-home,.fa-envelope{
+  font-size: 40px;
+  width: 100px;
+  margin: 20px;
 }

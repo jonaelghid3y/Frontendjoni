@@ -1,12 +1,8 @@
 
-
-import Header from './Header'
-import Hemcontainer from './Hemcontainer'
-import Footer from './Footer'
-import LanguageProvider from './LanguageProvider'
+import LanguageProvider from './Components/LanguageProvider'
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Projects from './Projects';
+import Projects from './pages/Projects';
 
 
 function App() {

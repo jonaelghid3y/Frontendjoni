@@ -6,12 +6,14 @@ function Språkknapp() {
     
 
   const { language, setLanguage } = useContext(LanguageContext);
-  const [buttonClass, setButtonClass] = useState('sverigebild');
-
+  const [buttonClass, setButtonClass] = useState(language === 'en' ? 'englandbild' : 'sverigebild');
+ 
   const switchLanguage = () => {
-    setLanguage(language === 'en' ? 'sv' : 'en');
+    const newLanguage = language === 'en' ? 'sv' : 'en';
+    localStorage.setItem('language', newLanguage);
+    setLanguage(newLanguage);
     setButtonClass(buttonClass === 'sverigebild' ? 'englandbild' : 'sverigebild');
-  }
+  };
 
   return (
     <button id='språkknapp' className={buttonClass} onClick={switchLanguage}>
