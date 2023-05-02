@@ -2,7 +2,7 @@
 import LanguageProvider from './Components/LanguageProvider'
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Projects from './pages/Projects';
+
 
 
 function App() {
