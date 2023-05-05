@@ -520,10 +520,10 @@ i.utbildning {
 
 #footer {
   position: absolute;
-  bottom: 200px;
-  left: 10px;
-  width: 85px;
-  height: 210px;
+  bottom: 12.5rem; 
+  left: 0.625rem;
+  width: 5.313rem; 
+  height: 13.125rem; 
   border-radius: 0px 20px 20px 0px;
   display: flex;
   justify-content: center;
