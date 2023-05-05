@@ -31,7 +31,7 @@ function projectinfo2() {
       <h1 id="projectinfo1h1" style={{ margin: 0 }}>{language === 'en' ? "API based movie-site" : "API baserad filmsida"}</h1>
       <div id="projectinfobild1">
 
-        <img id="projectinfoimg1" src='../src/img/bildförprojekt2.jpg' />
+        <img id="projectinfoimg1" src='https://scontent-arn2-1.xx.fbcdn.net/v/t39.30808-6/345269283_194771572957483_3973452224333018862_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=730e14&_nc_ohc=636mVky4F7oAX_xz3Bp&_nc_ht=scontent-arn2-1.xx&oh=00_AfBCHNzTWdqwi9rmnPbGhYc1Ja3LQ65K6YDHEYlfCYJ8UA&oe=645A0DEE' />
 
       </div>
       </div>

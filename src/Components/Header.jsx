@@ -51,7 +51,7 @@ function Header() {
 
     <Styledheadercontainer >
       <StyledProfilbild >
-        <Styledimg src='./src/img/1651492094462 (1).jpg' alt='Profile' />
+        <Styledimg src='https://scontent-arn2-1.xx.fbcdn.net/v/t39.30808-6/345224066_1423313994873365_5501460394490338911_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=730e14&_nc_ohc=eIQr2ccbEoUAX8VKrRb&_nc_ht=scontent-arn2-1.xx&oh=00_AfB6hMsMK9dHhXFYwl_6aZ3v6niy3wyeaycLY2kYamMMaA&oe=64590BAD' alt='Profile' />
         <StyledNamn id="Namn">Jonael Ghidey</StyledNamn>
       </StyledProfilbild>
       <div className={`hamburger ${showMenu ? 'open' : ''}`} onClick={toggleMenu}>

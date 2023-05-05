@@ -358,7 +358,7 @@ font-weight: light;
 margin-top: 50px;
 scroll-snap-align: start;
 overflow: hidden;
-background: url(../src/img/v748-toon-103.jpg);
+background: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v748-toon-25_1_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=176cef16d0f5f50438c8b7cc4030b6d2);
 background-size: cover;
 height: 700px;
 width: 100%;
