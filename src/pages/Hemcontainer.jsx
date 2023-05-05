@@ -358,7 +358,7 @@ font-weight: light;
 margin-top: 50px;
 scroll-snap-align: start;
 overflow: hidden;
-background: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v748-toon-25_1_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=176cef16d0f5f50438c8b7cc4030b6d2);
+background: url(https://scontent-arn2-1.xx.fbcdn.net/v/t39.30808-6/345180972_937166210657806_49748210578292787_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=4Cxvgh7zESUAX_S0EBJ&_nc_ht=scontent-arn2-1.xx&oh=00_AfCqTdZ1_sL56TxK14jDjZmQETCcHxMBtGUFOWIoP673HQ&oe=64597DC0);
 background-size: cover;
 height: 700px;
 width: 100%;
