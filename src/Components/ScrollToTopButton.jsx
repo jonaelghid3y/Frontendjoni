@@ -23,12 +23,12 @@ function ScrollToTopButton() {
   window.addEventListener('scroll', toggleVisibility);
 
   return (
-    <motion.button 
-  style={{marginTop: "10px" ,width: "50px", height:"50px"}}
-  whileTap={{ scale: 0.9 }}
->
-  <ScrollToTopButton />
-</motion.button>
+    <motion.div id="uppknapp" 
+  whileTap={{ scale: 0.8 }}
+  whileHover={{ scale: 1.1 }}
+><BsFillArrowUpCircleFill  onClick={scrollToTop}  color='#facf0f' />
+  
+</motion.div>
 
   );
 }

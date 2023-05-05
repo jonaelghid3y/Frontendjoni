@@ -2,6 +2,7 @@ import React, { useState, useContext } from 'react';
 import { LanguageContext } from './LanguageContext';
 
 
+
 function Språkknapp() {
     
 
@@ -16,9 +17,11 @@ function Språkknapp() {
   };
 
   return (
+   
     <button id='språkknapp' className={buttonClass} onClick={switchLanguage}>
       
     </button>
+ 
   );
 }
 

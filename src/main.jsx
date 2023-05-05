@@ -13,6 +13,7 @@ import {
 } from "react-router-dom";
 
 import Projectinfo1 from './pages/Projectinfo1'
+import Projectinfo2 from './pages/projectinfo2'
 
 
 const router = createBrowserRouter([
@@ -24,16 +25,22 @@ const router = createBrowserRouter([
         path: "/",
         element: <Hemcontainer/>,
       },
+      {
+        path: "/Projectinfo1",
+        element: <Projectinfo1/>,
+        
+      },
+      {
+        path: "/Projectinfo2",
+        element: <Projectinfo2/>,
+        
+      }
+     
      
       
     ],
-  },
-  {
-    path: "/Projectinfo1",
-    element: <Projectinfo1/>,
-    
   }
- 
+  
 
 ]);
 

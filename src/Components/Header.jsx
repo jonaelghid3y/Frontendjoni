@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { LanguageContext } from './LanguageContext';
 import { Link } from 'react-scroll';
 import styled, { css } from 'styled-components';
+import { motion } from 'framer-motion';
 
 function Header() {
   const { language } = useContext(LanguageContext);
@@ -59,6 +60,8 @@ function Header() {
         <div className="hamburger-line"></div>
       </div>
       <nav id="nav" className={`${showMenu ? 'open' : ''}`}>
+      <motion.div whileTap={{ scale: 0.9 }}>
+
         <Link
           to="Hemcontainer"
           spy={true}
@@ -70,6 +73,8 @@ function Header() {
         >
           {language === 'en' ? 'Home' : 'Hem'}
         </Link>
+        </motion.div>
+        <motion.div whileTap={{ scale: 0.9 }}>
         <Link
           to="aboutdiv"
           spy={true}
@@ -81,6 +86,8 @@ function Header() {
         >
           {language === 'en' ? 'About' : 'Om'}
         </Link>
+        </motion.div>
+        <motion.div whileTap={{ scale: 0.9 }}>
         <Link
           to="projectcontainer"
           spy={true}
@@ -92,6 +99,8 @@ function Header() {
         >
           {language === 'en' ? 'Project' : 'Projekt'}
         </Link>
+        </motion.div>
+        <motion.div whileTap={{ scale: 0.9 }}>
         <Link
           to="contactdiv"
           spy={true}
@@ -103,6 +112,7 @@ function Header() {
         >
           {language === 'en' ? 'Contact' : 'Kontakt'}
         </Link>
+        </motion.div>
       </nav>
     </Styledheadercontainer>
 
@@ -113,7 +123,7 @@ function Header() {
 
 const Styledheadercontainer = styled.div`
 margin-top: -10px;
-  
+font-weight: 600;
 height: 80px;
 background-color: white;
 z-index: 1;

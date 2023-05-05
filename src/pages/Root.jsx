@@ -1,18 +1,23 @@
 import React from 'react';
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
-import { Outlet, useLocation } from 'react-router-dom'; // Updated import
+import { Outlet, useLocation } from 'react-router-dom'; 
 import LanguageProvider from '../Components/LanguageProvider';
 
 const Root = () => {
- 
+  const { pathname } = useLocation();
+
+  const shouldRenderHeaderFooter = !['/projectinfo1', '/projectinfo2'].includes(pathname);
+  console.log('shouldRenderHeaderFooter:', shouldRenderHeaderFooter);
+  console.log('pathname:', pathname);
+
   
 
   return (
     <LanguageProvider>
-      <Header />
+      {shouldRenderHeaderFooter && <Header />}
       <Outlet />
-      <Footer />
+      {shouldRenderHeaderFooter && <Footer />}
     </LanguageProvider>
   );
 };
