@@ -82,7 +82,7 @@ function Hemcontainer() {
           transition={{ duration: 2 }}
           className="fadein"
         >
-          {language === 'en' ? 'A frontend developer student that love to learn' : ' En frontend utvecklare som älskar att lära mig'}
+          {language === 'en' ? 'A Front-End-Developer that love to learn' : ' En Front-End Utvecklare som älskar att lära mig'}
         </motion.p>
 
         <motion.div
@@ -294,7 +294,7 @@ function Hemcontainer() {
 
         <h1 style={{ margin: "0", marginTop: "50px", fontSize: "50px" }}>Contact</h1>
         <span style={{ width: "30px", height: "4px", backgroundColor: "#facf0f", borderRadius: "5px", margin: "10px" }} ></span>
-        <p id="contactp">{language === 'en' ? "Thank you for visiting my portfolio! For work, collaboration or other inquiries, please feel free to reach out to me via email at jonaelghidey@hotmail.com. You can also check out my projects and code on my Github profile or read more about my experience and background on my LinkedIn page. I look forward to hearing from you!" : "Tack för att du besöker min portfolio! För arbets- eller samarbetsfrågor, kontakta mig via jonaelghidey@hotmail.com. Du kan också se mina projekt på Github och min erfarenhet på LinkedIn. Ser fram emot att höra från dig!"}</p>
+        <p id="contactp">{language === 'en' ? "Thank you for visiting my portfolio! For work collaboration or other inquiries, please feel free to reach out to me via email at jonaelghidey@hotmail.com. You can also check out my projects and code on my Github profile or read more about my experience and background on my LinkedIn page. I look forward to hearing from you!" : "Tack för att du besöker min portfolio! För arbets- eller samarbetsfrågor, kontakta mig via jonaelghidey@hotmail.com. Du kan också se mina projekt på Github och min erfarenhet på LinkedIn. Ser fram emot att höra från dig!"}</p>
 
 
 
