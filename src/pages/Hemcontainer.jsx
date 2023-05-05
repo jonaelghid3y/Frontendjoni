@@ -135,7 +135,7 @@ function Hemcontainer() {
 
               <h1 id="abouth1" style={{ margin: "0", marginTop: "80px" }}>{language === 'en' ? "About me" : "Om mig"}</h1>
               <span style={{ width: "30px", height: "8px", backgroundColor: "#facf0f", borderRadius: "5px", margin: "10px" }} ></span>
-              <p id="aboutp" style={{ fontSize: "18px" }}>{language === 'en' ? "Discover more about me, my skills in programming and technology, as well as my education and work experience by scrolling to the right." : "Ta reda på mer om mig, mina färdigheter inom programmering och olika teknologier, samt min utbildning och arbetslivserfarenhet genom att scrolla till höger."}</p>
+              <p id="aboutp" style={{ fontSize: "18px" }}>{language === 'en' ? "Here you can find out more about my skills in programming, as well as my education and work experience by scrolling to the right." : "Ta reda på mer om mig, mina färdigheter inom programmering, samt min utbildning och arbetslivserfarenhet genom att scrolla till höger."}</p>
 
 
               <Styledaboutmediv>
