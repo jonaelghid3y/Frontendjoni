@@ -141,9 +141,9 @@ function Hemcontainer() {
               <Styledaboutmediv>
                 <div id="abouttextcontainer">
 
-                  <h2 id="aboutheader" >{language === 'en' ? "get to know me!" : "Lär känna mig!"}</h2>
+                  <h2 id="aboutheader" >{language === 'en' ? "Get to know me!" : "Lär känna mig!"}</h2>
 
-                  <p style={{ marginBottom: "10px" }} id="abouttext" >{language === 'en' ? "Im self-driven frontend developer with experience in HTML, CSS, JavaScript, and React. I also have experience as a lead assembler and supervisor as an electrician, which has given me the ability to manage time and priorities effectively, as well as lead and support a team. I believe that my passion and expertise as a frontend developer, combined with my leadership experience in other fields, make me an asset to your team." : "Jag är en självgående frontend-utvecklare med erfarenhet av HTML, CSS, JavaScript och React. Jag har också erfarenhet av att vara en ledande montör och arbetsledare som elektriker, vilket har gett mig förmågan att hantera tid och prioriteringar effektivt, liksom att leda och stödja ett team. Jag tror att min passion och kompetens som frontend-utvecklare, tillsammans med mina erfarenheter som ledare inom andra områden, gör mig till en tillgång för ditt team."}
+                  <p style={{ marginBottom: "10px" }} id="abouttext" >{language === 'en' ? "I am  a self-driven frontend developer with experience in HTML, CSS, JavaScript, and React. I also have experience as a lead assembler and supervisor as an electrician, which has given me the ability to manage time and to priorities effectively, as well as lead and support a team. I believe that my passion and expertise as a frontend developer, combined with my leadership experience in other fields, make me an asset to your team." : "Jag är en självgående frontend-utvecklare med erfarenhet av HTML, CSS, JavaScript och React. Jag har också erfarenhet av att vara en ledande montör och arbetsledare som elektriker, vilket har gett mig förmågan att hantera tid och prioriteringar effektivt, liksom att leda och stödja ett team. Jag tror att min passion och kompetens som frontend-utvecklare, tillsammans med mina erfarenheter som ledare inom andra områden, gör mig till en tillgång för ditt team."}
 
                   </p>
                   <motion.div style={{ marginTop: "30px" }} id="motionuppknapp"
@@ -251,7 +251,8 @@ function Hemcontainer() {
 
           <h1 id='projekth1'>{language === 'en' ? "Projects" : "Projekt"}</h1>
           <span style={{ width: "30px", height: "5px", backgroundColor: "#facf0f", borderRadius: "5px", margin: "10px" }} > </span>
-          <p id="projektinfo" >{language === 'en' ? " Welcome to my portfolio page, showcasing my skills in HTML, CSS, JavaScript, React, and Node.js. Along with my personal web portfolio, here are some of my favorite projects that I have created. I am constantly working on new projects and will update this section as I develop more exciting ones" : "Välkommen till min portföljsida, där jag visar upp mina färdigheter i HTML, CSS, JavaScript, React och Node.js. Förutom min personliga webbportfölj, här är några av mina favoritprojekt som jag har skapat. Jag arbetar kontinuerligt med nya projekt och kommer att uppdatera den här sektionen allt eftersom jag utvecklar fler spännande projekt."} </p>
+          <p id="projektinfo" >{language === 'en' ? " Welcome to my portfolio page, showcasing my skills in HTML, CSS, JavaScript, React, and Node.js. Along with my personal web portfolio, here are some of my favorite projects that I have created. I am constantly working on new projects and will update this section as I develop more exciting ones" 
+          : "Välkommen till min portföljsida, där jag visar upp mina färdigheter i HTML, CSS, JavaScript, React och Node.js. Utöver min personliga webbportfölj, här är några av mina favoritprojekt som jag har skapat. Jag arbetar kontinuerligt med nya projekt och kommer att uppdatera den här sektionen allt eftersom jag utvecklar fler spännande projekt."} </p>
 
           <Styledprojectkort>
             <Styledkortcontainer>
