@@ -219,8 +219,9 @@ html {
 }
 
 .sliderdiv {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+;
+margin: 40px;
  
   
   max-height: 170vh;
@@ -233,6 +234,7 @@ html {
 }
 
 .slider {
+  background-color: #eeeeee;
  
  
   max-height: 400px;
@@ -353,12 +355,24 @@ width: 100%;
 .englandbild {
   background-image: url(https://scontent-arn2-1.xx.fbcdn.net/v/t39.30808-6/345154362_643018567644384_7203948625703043480_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=aakPlFQFMr4AX-AlKan&_nc_ht=scontent-arn2-1.xx&oh=00_AfAvgTEASGKnTd1L44_VgOlxlCLVtZ6A5zJNL5O0kVZSSQ&oe=6459DDD0);
 }
+#språkknappdiv{
+ 
+}
+#språkknapptext{
+  font-size: 12px;
+  
+  position: absolute;
+  top: 230px;
+  right: 85px;
+
+}
 
 #språkknapp {
   border: none;
   position: absolute;
   top: 200px;
-  right: 70px;
+  right: 90px;
+ 
   border: none;
   height: 20px;
   width: 30px;
@@ -368,7 +382,7 @@ width: 100%;
 
 .språkknapp:hover {
   opacity: 0.7;
-  scale: 0.7;
+  scale: 2;
 
 }
 
@@ -508,14 +522,23 @@ i.utbildning {
   justify-content: center;
   align-items: center;
   width: 200px;
+ 
 }
-
+#motionsidovänsterknapp{
+  margin: 0;
+  height: 40px;
+ margin-top: 45vh;
+  
+}
 #uppknapp {
   font-size: 30px;
   margin: 0;
    margin-left: 70vw; 
    height:20px
  
+}
+#motionsidoknapp{
+  width: 10px;
 }
 
 #footer {
@@ -588,12 +611,28 @@ i.utbildning {
     width: 300px;
     text-align: center;
   }
-
+  #språkknappdiv{
+    
+    
+   
+  
+  }
+  #språkknapptext{
+    margin-top: 30px;
+    position: absolute;
+    top: 130px;
+    right: 45px;
+    
+    
+    font-size: 12px;
+    
+  }
   #språkknapp {
     border: none;
     position: absolute;
     top: 120px;
-    right: 40px;
+    right: 50px;
+  
     border: none;
     height: 17px;
     width: 25px;
@@ -700,6 +739,12 @@ i.utbildning {
 
 
     text-align: center;
+  }
+  #motionsidovänsterknapp{
+    margin: 0;
+    height: 40px;
+   margin-top: 10px;
+    
   }
 
   .projektArbeten {

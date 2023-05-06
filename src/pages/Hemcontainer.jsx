@@ -1,16 +1,14 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState, useRef } from 'react';
 import { LanguageContext } from '../Components/LanguageContext';
 import Språkknapp from '../Components/Språkknapp';
 import { Link, useLocation } from 'react-router-dom';
-import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import "@fontsource/source-sans-pro";
-import { AiFillCompass, AiFillLinkedin } from 'react-icons/ai';
-import { BsFillPinMapFill } from 'react-icons/bs';
+import { AiFillLinkedin } from 'react-icons/ai';
 import { AiFillGithub } from 'react-icons/ai';
 import { GrMapLocation } from 'react-icons/gr';
 import { AiOutlineMail } from 'react-icons/ai';
-import { BsFillArrowRightCircleFill } from 'react-icons/bs'
+import { BsFillArrowRightCircleFill, BsFillArrowLeftCircleFill } from 'react-icons/bs'
 import { Html5Original, Css3Original, JavascriptOriginal, ReactOriginal, BootstrapOriginal, NodejsOriginal, LinkedinOriginal, LinkedinOriginalWordmark } from 'devicons-react';
 import ScrollToTopButton from '../Components/ScrollToTopButton'
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
@@ -22,18 +20,29 @@ import styled, { css } from 'styled-components';
 
 
 function Hemcontainer() {
+
   const [showIcons, setShowIcons] = useState(false);
   const { language } = useContext(LanguageContext);
+
   const location = useLocation();
 
-  useEffect(() => {
-    if (location.hash === '#projectcontainer') {
-      const projectContainer = document.getElementById('projectcontainer');
-      projectContainer.scrollIntoView();
-    }
-  }, [location.hash]);
+  const scrollToAbout = () => {
+    const element = document.getElementById("aboutdiven");
+    const container = document.getElementById("sidescroll2");
+    const offset = 50;
+    const x = element.getBoundingClientRect().left + window.pageXOffset - offset;
+  container.scrollTo({ left: x, behavior: "smooth" });
+  };
 
-  const { scrollY } = useScroll();
+
+  const scrollToUtbildning = () => {
+    const element = document.getElementById("utbildningdiv");
+    const container = document.getElementById("sidescroll2");
+    const offset = 50;
+    const x = element.getBoundingClientRect().left - container.getBoundingClientRect().left + container.scrollLeft - offset;
+    container.scrollTo({ left: x, behavior: "smooth" });
+  };
+
 
   const fadeVariants = {
     hidden: { opacity: 0 },
@@ -49,7 +58,7 @@ function Hemcontainer() {
     { icon: <NodejsOriginal color="yellow" size="30" />, color: "yellow" },
     { icon: <ReactOriginal color="turquoise" size="30" />, color: "turquoise" },
   ];
-  
+
   const iconComponents = ids.map((id, index) => (
     <motion.div key={id} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
       {icons[index].icon}
@@ -82,7 +91,7 @@ function Hemcontainer() {
           transition={{ duration: 2 }}
           className="fadein"
         >
-          {language === 'en' ? 'A Front-End-Developer that love to learn' : ' En Front-End Utvecklare som älskar att lära mig'}
+          {language === 'en' ? 'A Front-end Developer that love to learn' : ' En frontend-utvecklare som älskar att lära mig'}
         </motion.p>
 
         <motion.div
@@ -106,7 +115,7 @@ function Hemcontainer() {
             {language === 'en' ? 'Projects' : 'Projekt'}
           </ScrollLink>
         </motion.div>
-        <motion.div id="techstackdiv"  initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }} onAnimationComplete={() => setShowIcons(true)}>
+        <motion.div id="techstackdiv" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }} onAnimationComplete={() => setShowIcons(true)}>
           {showIcons && (
 
 
@@ -114,7 +123,7 @@ function Hemcontainer() {
             <AnimatePresence>
               <h4>Techstack:</h4>
               {iconComponents}
-            
+
             </AnimatePresence>
           )}
 
@@ -126,9 +135,9 @@ function Hemcontainer() {
 
       <Styledaboutcontainer id="aboutdiv">
 
-        <Styledsidescroll2>
+        <Styledsidescroll2 id="sidescroll2">
 
-          <Styledaboutsection>
+          <Styledaboutsection id="aboutdiven">
 
 
             <Styledabouttextdiv style={{ backgroundColor: "rgb(245, 245, 245)" }}>
@@ -146,12 +155,18 @@ function Hemcontainer() {
                   <p style={{ marginBottom: "10px" }} id="abouttext" >{language === 'en' ? "I am  a self-driven frontend developer with experience in HTML, CSS, JavaScript, and React. I also have experience as a lead assembler and supervisor as an electrician, which has given me the ability to manage time and to priorities effectively, as well as lead and support a team. I believe that my passion and expertise as a frontend developer, combined with my leadership experience in other fields, make me an asset to your team." : "Jag är en självgående frontend-utvecklare med erfarenhet av HTML, CSS, JavaScript och React. Jag har också erfarenhet av att vara en ledande montör och arbetsledare som elektriker, vilket har gett mig förmågan att hantera tid och prioriteringar effektivt, liksom att leda och stödja ett team. Jag tror att min passion och kompetens som frontend-utvecklare, tillsammans med mina erfarenheter som ledare inom andra områden, gör mig till en tillgång för ditt team."}
 
                   </p>
-                  <motion.div style={{ marginTop: "30px" }} id="motionuppknapp"
-                    animate={{ x: [0, 20, 0] }}
-                    transition={{ duration: 1.5, ease: "easeInOut", repeat: Infinity }}
-                  >
-                    <BsFillArrowRightCircleFill color='#facf0f' />
-                  </motion.div>
+
+                  <a onClick={scrollToUtbildning}>
+                    <motion.div style={{ marginTop: "30px" }} id="motionsidoknapp"
+                     whileTap={{ scale: 0.8 }}
+                     whileHover={{scale: 1.2}}
+                     >
+                      <BsFillArrowRightCircleFill color='#facf0f' />
+                    </motion.div>
+                  </a>
+
+                  
+
                 </div>
 
 
@@ -191,17 +206,26 @@ function Hemcontainer() {
           </Styledaboutsection>
 
 
-          <Styledaboutsection>
+          <Styledaboutsection >
 
 
 
 
-            <Styledutbildningsdiv>
+            <Styledutbildningsdiv id="utbildningdiv" >
+            
 
               <h1 style={{ margin: "0", marginTop: "80px", fontSize: "40px" }}>{language === 'en' ? "Experiences" : "Erfarenheter"}</h1>
               <span style={{ width: "28px", height: "6px", backgroundColor: "#facf0f", borderRadius: "5px", margin: "10px" }} ></span>
               <p style={{ margin: "0", fontSize: "18px", color: "gray" }}>{language === 'en' ? "My Education and workexperiences" : "Mina utbildningar och arbetserfarenhet"}</p>
               <div id="erfarenheter">
+              <a onClick={scrollToAbout} id="motionsidovänsterknapp">
+                    <motion.div  
+                     whileTap={{ scale: 0.8 }}
+                     whileHover={{scale: 1.2}}
+                     >
+                      <BsFillArrowLeftCircleFill color='#facf0f' />
+                    </motion.div>
+                  </a>
                 <Styledutbildningsdiv1>
 
 
@@ -217,7 +241,7 @@ function Hemcontainer() {
                     <p className="utbildningarp"></p>
                     <i className='utbildning'>{language === 'en' ? "August 2011 - June 2014" : "Augusti 2011 - Juni 2014"}</i>
                   </div>
-
+                
                 </Styledutbildningsdiv1>
 
 
@@ -251,8 +275,8 @@ function Hemcontainer() {
 
           <h1 id='projekth1'>{language === 'en' ? "Projects" : "Projekt"}</h1>
           <span style={{ width: "30px", height: "5px", backgroundColor: "#facf0f", borderRadius: "5px", margin: "10px" }} > </span>
-          <p id="projektinfo" >{language === 'en' ? " Welcome to my portfolio page, showcasing my skills in HTML, CSS, JavaScript, React, and Node.js. Along with my personal web portfolio, here are some of my favorite projects that I have created. I am constantly working on new projects and will update this section as I develop more exciting ones" 
-          : "Välkommen till min portföljsida, där jag visar upp mina färdigheter i HTML, CSS, JavaScript, React och Node.js. Utöver min personliga webbportfölj, här är några av mina favoritprojekt som jag har skapat. Jag arbetar kontinuerligt med nya projekt och kommer att uppdatera den här sektionen allt eftersom jag utvecklar fler spännande projekt."} </p>
+          <p id="projektinfo" >{language === 'en' ? " Welcome to my portfolio page, showcasing my skills in HTML, CSS, JavaScript, React, and Node.js. Along with my personal web portfolio, here are some of my favorite projects that I have created. I am constantly working on new projects and will update this section as I develop more exciting ones"
+            : "Välkommen till min portföljsida, där jag visar upp mina färdigheter i HTML, CSS, JavaScript, React och Node.js. Utöver min personliga webbportfölj, här är några av mina favoritprojekt som jag har skapat. Jag arbetar kontinuerligt med nya projekt och kommer att uppdatera den här sektionen allt eftersom jag utvecklar fler spännande projekt."} </p>
 
           <Styledprojectkort>
             <Styledkortcontainer>
@@ -272,7 +296,7 @@ function Hemcontainer() {
               <h6 style={{ margin: 0 }}>{language === 'en' ? "API based moviesite" : "API baserad filmsida"}</h6>
               <motion.div whileTap={{ scale: 0.8 }}
                 whileHover={{ scale: 1.2 }}>
-                <Link className='projektknappar'  to="/projectinfo2">{language === 'en' ? "Read more" : "läs mer"}</Link>
+                <Link className='projektknappar' to="/projectinfo2">{language === 'en' ? "Read more" : "läs mer"}</Link>
               </motion.div>
 
 
