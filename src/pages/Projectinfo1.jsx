@@ -54,13 +54,13 @@ const { language } = useContext(LanguageContext);
           <motion.div whileTap={{ scale: 0.8 }}   whileHover={{ scale: 1.2 }}>
            
 
-            <Link to ="https://brokenrecords.vercel.app/" className='livedemoknapp'> Live Demo
+            <Link to ="https://brokenrecords.vercel.app/" target="_blank" className='livedemoknapp'> Live Demo
 
             </Link>
             </motion.div>
 
             <motion.div whileTap={{ scale: 0.8 }}   whileHover={{ scale: 1.2 }}>
-            <Link className="länkar2" style={{}} to="https://github.com/jonaelghid3y/Brokenrecords">
+            <Link className="länkar2" style={{}} to="https://github.com/jonaelghid3y/Brokenrecords" target="_blank">
               <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
                 <p style={{ margin: 0 }}> Repository</p>
                 <AiFillGithub color='black' size={30} style={{ marginTop: "" }} />

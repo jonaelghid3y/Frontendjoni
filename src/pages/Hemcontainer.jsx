@@ -82,7 +82,7 @@ function Hemcontainer() {
           transition={{ duration: 2 }}
           id="hemcontainertitel"
         >
-          {language === 'en' ? "HEY, I'M JONAEL GHIDEY" : "Hej, jag är Jonael Ghidey"}
+          {language === 'en' ? "HEY, I'M NAHOM GHIDEY" : "Hej, jag är Jonael Ghidey"}
         </motion.h1>
         <motion.p
           id="hemcontainertext"
@@ -156,14 +156,7 @@ function Hemcontainer() {
 
                   </p>
 
-                  <a onClick={scrollToUtbildning}>
-                    <motion.div style={{ marginTop: "30px" }} id="motionsidoknapp"
-                     whileTap={{ scale: 0.8 }}
-                     whileHover={{scale: 1.2}}
-                     >
-                      <BsFillArrowRightCircleFill color='#facf0f' />
-                    </motion.div>
-                  </a>
+                
 
                   
 
@@ -195,6 +188,14 @@ function Hemcontainer() {
                     <div className='skills'>{language === 'en' ? "English" : "Engelska"}</div>
                     <div className='skills'>{language === 'en' ? "Swedish" : "Svenska"}</div>
                   </div>
+                  <a onClick={scrollToUtbildning}>
+                    <motion.div  id="motionsidoknapp"
+                     whileTap={{ scale: 0.8 }}
+                     whileHover={{scale: 1.2}}
+                     >
+                      <BsFillArrowRightCircleFill color='#facf0f' />
+                    </motion.div>
+                  </a>
 
 
 
@@ -218,14 +219,7 @@ function Hemcontainer() {
               <span style={{ width: "28px", height: "6px", backgroundColor: "#facf0f", borderRadius: "5px", margin: "10px" }} ></span>
               <p style={{ margin: "0", fontSize: "18px", color: "gray" }}>{language === 'en' ? "My Education and workexperiences" : "Mina utbildningar och arbetserfarenhet"}</p>
               <div id="erfarenheter">
-              <a onClick={scrollToAbout} id="motionsidovänsterknapp">
-                    <motion.div  
-                     whileTap={{ scale: 0.8 }}
-                     whileHover={{scale: 1.2}}
-                     >
-                      <BsFillArrowLeftCircleFill color='#facf0f' />
-                    </motion.div>
-                  </a>
+              
                 <Styledutbildningsdiv1>
 
 
@@ -262,7 +256,16 @@ function Hemcontainer() {
 
 
                 </div>
+              
               </div>
+              <a onClick={scrollToAbout} id="motionsidovänsterknapp">
+                    <motion.div  
+                     whileTap={{ scale: 0.8 }}
+                     whileHover={{scale: 1.2}}
+                     >
+                      <BsFillArrowLeftCircleFill color='#facf0f' />
+                    </motion.div>
+                  </a>
             </Styledutbildningsdiv>
 
           </Styledaboutsection>
@@ -405,7 +408,7 @@ font-size: 30px;
 
 const Styledaboutcontainer = styled.div`
 
-max-height: 92vh;
+max-height: 115vh;
 width: 100%;
 background-size: cover;
 font-size: 30px;
@@ -416,7 +419,7 @@ scroll-behavior: smooth;
 
 @media (max-width: 768px) {
 
-max-height: 160vh;
+max-height: 210vh;
 width: 100%;
 background-size: cover;
 font-size: 30px;
@@ -634,10 +637,10 @@ flex-direction: row;
 justify-content: space-around;
 
 @media (max-width: 768px) {
-  padding-top: 50px;
+  padding-top: 30px;
   width: 100%;
   height: 100%;
-  margin-top: 50px;
+  margin-top: 0px;
   font-size: 30px;
  
   display: flex;

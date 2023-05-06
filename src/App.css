@@ -453,6 +453,7 @@ i.utbildning {
   margin: 0;
 }
 
+
 #abouttextdiv {
   background-color: rgb(255, 255, 255);
 }
@@ -527,7 +528,9 @@ i.utbildning {
 #motionsidovänsterknapp{
   margin: 0;
   height: 40px;
- margin-top: 45vh;
+ margin-bottom: 40px;
+ margin-left: 160vh;
+
   
 }
 #uppknapp {
@@ -537,8 +540,15 @@ i.utbildning {
    height:20px
  
 }
+
 #motionsidoknapp{
-  width: 10px;
+  margin-left: 40vh;
+  margin-top: 50px;
+  font-size: 30px;
+  width: 50px;
+
+  height: 35px;
+  
 }
 
 #footer {
@@ -685,6 +695,9 @@ i.utbildning {
 
 
   #abouttext {
+    
+    padding-bottom: 50px;
+    
     font-size: 16px;
     width: 300px;
   }
@@ -743,7 +756,17 @@ i.utbildning {
   #motionsidovänsterknapp{
     margin: 0;
     height: 40px;
-   margin-top: 10px;
+  
+   margin-bottom: 40px;
+    
+  }
+  #motionsidoknapp{
+    margin-left: 15vh;
+    margin-top: 120px;
+    font-size: 30px;
+    width: 50px;
+  
+    height: 35px;
     
   }
 
