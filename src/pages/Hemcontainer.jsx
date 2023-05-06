@@ -361,7 +361,7 @@ scroll-snap-align: start;
 overflow: hidden;
 background: url(https://scontent-arn2-1.xx.fbcdn.net/v/t39.30808-6/345180972_937166210657806_49748210578292787_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=4Cxvgh7zESUAX_S0EBJ&_nc_ht=scontent-arn2-1.xx&oh=00_AfCqTdZ1_sL56TxK14jDjZmQETCcHxMBtGUFOWIoP673HQ&oe=64597DC0);
 background-size: cover;
-height: 700px;
+height: 92vh;
 width: 100%;
 display: flex;
 align-items: center;
@@ -380,7 +380,8 @@ font-size: 30px;
 `;
 
 const Styledaboutcontainer = styled.div`
-max-height: 745px;
+
+max-height: 92vh;
 width: 100%;
 background-size: cover;
 font-size: 30px;
@@ -391,7 +392,7 @@ scroll-behavior: smooth;
 
 @media (max-width: 768px) {
 
-max-height: 1600px;
+max-height: 160vh;
 width: 100%;
 background-size: cover;
 font-size: 30px;
@@ -454,7 +455,7 @@ scroll-snap-destination: 0% 0%;
 const Styledonepagediv = styled.div`
 scroll-snap-type: y mandatory;
 scroll-behavior: smooth;
-min-height: 2900px;
+min-height: 290vh
 width: 100%;
 display: flex;
 align-items: center;
@@ -507,7 +508,7 @@ margin-top: -5px;
 scroll-snap-align: start;
 border: 1px solid rgb(232, 232, 232);
 background-color: rgb(255, 255, 255);
-min-height: 810px;
+min-height: 81vh;
 width: 99.9%;
 background-size: cover;
 font-size: 30px;
@@ -524,7 +525,7 @@ scroll-behavior: smooth;
   scroll-snap-align: start;
   border: 1px solid rgb(232, 232, 232);
   background-color: rgb(255, 255, 255);
-  min-height: 810px;
+  min-height: 81vh;
   width: 99.9%;
   background-size: cover;
   font-size: 30px;
@@ -554,7 +555,7 @@ flex-direction: column;
 
 const Styledkortcontainer = styled.div`
 
-width: 400px;
+width: 40vh;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -563,7 +564,7 @@ flex-direction: column;
 
 @media (max-width: 768px) {
 
-  width: 300px;
+  width: 30vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -630,7 +631,7 @@ scroll-snap-align: start;
 background-color: rgb(245, 245, 245);
 overflow: hidden;
 padding-bottom: 80px;
-min-height: 650px;
+min-height: 65vh;
 width: 99.9%;
 background-size: cover;
 display: flex;
@@ -644,7 +645,7 @@ justify-content: center;
   scroll-snap-align: start;
   background-color: rgb(245, 245, 245);
   overflow: hidden;
-  min-height: 800px;
+  min-height: 80vh;
   width: 99.9%;
   background-size: cover;
   display: flex;
@@ -661,7 +662,7 @@ margin-top: 50px;
   flex-wrap: wrap;
   justify-content: center;
   width: 600px;
-  height: 200px;
+  height: 20vh;
   gap: 50px;
   flex-direction: row;
 
