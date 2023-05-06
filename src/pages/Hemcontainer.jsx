@@ -82,7 +82,7 @@ function Hemcontainer() {
           transition={{ duration: 2 }}
           id="hemcontainertitel"
         >
-          {language === 'en' ? "HEY, I'M NAHOM GHIDEY" : "Hej, jag är Jonael Ghidey"}
+          {language === 'en' ? "HEY, I'M JONAEL GHIDEY" : "Hej, jag är Jonael Ghidey"}
         </motion.h1>
         <motion.p
           id="hemcontainertext"
