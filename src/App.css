@@ -538,7 +538,8 @@ i.utbildning {
 }
 #uppknapp {
   font-size: 30px;
-   margin: 0 auto;
+  margin-top: 50px;
+   margin-left: 80vw;
    height:20px
  
 }
