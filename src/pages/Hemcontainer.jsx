@@ -188,8 +188,8 @@ function Hemcontainer() {
                     <div className='skills'>{language === 'en' ? "English" : "Engelska"}</div>
                     <div className='skills'>{language === 'en' ? "Swedish" : "Svenska"}</div>
                   </div>
-                  <a onClick={scrollToUtbildning}>
-                    <motion.div  id="motionsidoknapp"
+                  <a id="motionsidoknapp" onClick={scrollToUtbildning}>
+                    <motion.div  
                      whileTap={{ scale: 0.8 }}
                      whileHover={{scale: 1.2}}
                      >
@@ -347,12 +347,12 @@ function Hemcontainer() {
 
 
 
-          <div id="mail">
+          <a href="mailto:jonaelghidey@hotmail.com">
 
             <AiOutlineMail size={40} style={{ margin: 0, marginTop: "-1px" }} />
 
             <h4 style={{ margin: "0" }}>jonaelghidey@hotmail.com</h4>
-          </div>
+          </a>
 
 
 
@@ -591,7 +591,7 @@ flex-direction: column;
 
 @media (max-width: 768px) {
 
-  width: 30vh;
+  width: 35vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -638,6 +638,7 @@ justify-content: space-around;
 
 @media (max-width: 768px) {
   padding-top: 30px;
+  padding-bottom: 0px;
   width: 100%;
   height: 100%;
   margin-top: 0px;

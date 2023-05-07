@@ -166,10 +166,12 @@ html {
   margin-top: 20px;
   text-decoration: none;
   text-align: center;
+  font-weight: bold;
   font-size: 15px;
-  padding: 5px;
+  padding: 10px;
   border-radius: 10px;
   height: 20px;
+  
   color: rgb(0, 0, 0);
   background-color: #facf0f;
 }
@@ -526,10 +528,11 @@ i.utbildning {
  
 }
 #motionsidovänsterknapp{
+ 
   margin: 0;
   height: 40px;
- margin-bottom: 40px;
- margin-left: 160vh;
+ margin-bottom: 70px;
+ margin-left: 60vw;
 
   
 }
@@ -542,8 +545,9 @@ i.utbildning {
 }
 
 #motionsidoknapp{
-  margin-left: 40vh;
-  margin-top: 50px;
+  
+  margin-left: 9vw;
+  margin-top: 13vh;
   font-size: 30px;
   width: 50px;
 
@@ -658,7 +662,7 @@ i.utbildning {
     justify-content: center;
     font-size: 20px;
     background-color: #facf0f;
-    color: white;
+    color: rgb(0, 0, 0);
     height: 40px;
     width: 150px;
     font-weight: bold;
@@ -761,10 +765,11 @@ i.utbildning {
     
   }
   #motionsidoknapp{
-    margin-left: 15vh;
-    margin-top: 120px;
+    margin: 0 auto;
+    margin-top: 15vh;
     font-size: 30px;
     width: 50px;
+    margin-bottom: 50px;
   
     height: 35px;
     
