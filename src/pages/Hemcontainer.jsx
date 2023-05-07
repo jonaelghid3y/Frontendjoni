@@ -347,11 +347,12 @@ function Hemcontainer() {
 
 
 
-          <a href="mailto:jonaelghidey@hotmail.com">
-
+          <a href="mailto:jonaelghidey@hotmail.com" id='mail'>
+          <motion.div whileTap={{ scale: 0.8 }}
+              whileHover={{ scale: 1.2 }}>
             <AiOutlineMail size={40} style={{ margin: 0, marginTop: "-1px" }} />
 
-            <h4 style={{ margin: "0" }}>jonaelghidey@hotmail.com</h4>
+            </motion.div>
           </a>
 
 
