@@ -221,10 +221,9 @@ html {
 }
 
 .sliderdiv {
-  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
-;
-margin: 40px;
- 
+
+padding: 50px;
+ background-color: #f1f1f1;
   
   max-height: 170vh;
   max-width: 100%;
@@ -828,6 +827,19 @@ i.utbildning {
     font-size: 40px;
     background-color: white;
   }
+  .sliderdiv {
+
+    padding: 50px;
+     background-color: #f1f1f1;
+      
+      max-height: 200vh;
+      max-width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+    ;
+    }
   #projektinfo1div{
     max-width: 370px;
 
@@ -835,8 +847,15 @@ i.utbildning {
     justify-content: center;
     flex-direction: column;
   }
+  #projectinfo2h1{
+    font-size: 20px;
+    width: 300px;
+
+
+  }
+ 
   #projectinfo1h1{
-    font-size: 30px;
+    font-size: 20px;
     width: 300px;
 
   }
@@ -863,6 +882,9 @@ i.utbildning {
     font-size: 18px;
     
     margin-bottom: 50px;
+  }
+  #projectoverviewid{
+    font-size: 20px;
   }
   .slidertext{
   

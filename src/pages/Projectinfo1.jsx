@@ -43,7 +43,7 @@ const { language } = useContext(LanguageContext);
        
 
          
-        <h1 style={{margin: 0}}>{language === 'en' ? "Project overview" : "Projekt översikt"}</h1>
+        <h1 style={{margin: 0}} id="projectoverviewid">{language === 'en' ? "Project overview" : "Projekt översikt"}</h1>
           <p className='projektinfotext' >{language === 'en' ? "I have developed an e-commerce web shop using Node.js and React, where users can browse products, view detailed product information, and add products to their shopping cart. The web shop also has an admin page where the administrator can edit existing products and add new ones. To enhance the user experience, I have implemented animations using the Framer Motion library. I am proud of my work and have utilized my knowledge in both frontend and backend development to create a functional and visually appealing web shop." : "  Jag har utvecklat en webbshop med hjälp av Node.js och React, där användare kan bläddra bland produkter, se detaljerad produktinformation och lägga till produkter i sin kundvagn. Webbshopen har också en admin-sida där administratören kan redigera befintliga produkter och lägga till nya. För att förbättra användarupplevelsen har jag implementerat animationer med hjälp av biblioteket Framer Motion. Jag är stolt över mitt arbete och har använt mina kunskaper i både Frontend- och Backend-utveckling för att skapa en funktionell och visuellt tilltalande webbshop. kan du översätta detta"}
             
           </p>

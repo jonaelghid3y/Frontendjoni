@@ -40,7 +40,7 @@ function projectinfo2() {
 
       <div className="slidertext">
 
-        <h1 style={{margin: 0}}>{language === 'en' ? "Project overview" : "Projekt översikt"}</h1>
+        <h1 style={{margin: 0}} id="projectinfo2h1">{language === 'en' ? "Project overview" : "Projekt översikt"}</h1>
         <p className='projektinfotext' >{language === 'en' ? " I built a simple movie website based on an API that provides information about movies, TV shows, and games. Users can search and filter content based on the categories of movies, TV shows, or games. When users click on a single piece of content, such as a movie or a TV show, more detailed information about the selected content is displayed. The information includes the title, description, and trailer. To make the search and filtering functions more user-friendly and accessible, I implemented automatic updating of the page with each search or filter request so that users can quickly see the results. " : "  Jag byggde en enkel filmsida som är baserad på ett API som tillhandahåller information om filmer, serier och spel. Användare kan söka och filtrera innehåll baserat på kategorierna film, serier eller spel. När användare klickar på ett enskilt innehåll, som en film eller en serie, visas mer detaljerad information om det valda innehållet. Informationen inkluderar bland annat titel, beskrivning och trailer. För att göra sök- och filtreringsfunktionerna mer användarvänliga och tillgängliga, implementerade jag automatisk uppdatering av sidan vid varje sök- eller filtreringsförfrågan, så att användarna snabbt kan se resultatet"}
       
 
