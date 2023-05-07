@@ -403,6 +403,7 @@ font-size: 30px;
   max-height:700px; 
   width: 100%;
   font-size: 20px;
+  padding-bottom: 30px;
  
   }
 `;
@@ -583,7 +584,7 @@ flex-direction: column;
 
 const Styledkortcontainer = styled.div`
 
-width: 40vh;
+width: 45h;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -592,7 +593,7 @@ flex-direction: column;
 
 @media (max-width: 768px) {
 
-  width: 35vh;
+  width: 46vh;
   display: flex;
   align-items: center;
   justify-content: center;

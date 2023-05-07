@@ -532,27 +532,26 @@ i.utbildning {
  
   margin: 0;
   height: 40px;
- margin-bottom: 70px;
+ margin-bottom: 6vh;
  margin-left: 60vw;
 
   
 }
 #uppknapp {
   font-size: 30px;
-  margin: 0;
-   margin-left: 70vw; 
+   margin: 0 auto;
    height:20px
  
 }
 
 #motionsidoknapp{
   
-  margin-left: 9vw;
-  margin-top: 13vh;
+  margin: 0 auto;
+  margin-top: 10vh;
   font-size: 30px;
-  width: 50px;
+ 
 
-  height: 35px;
+  height: 40px;
   
 }
 
@@ -602,11 +601,12 @@ i.utbildning {
   }
 
   #nav.open {
+    padding: 10px;
     font-size: 15px;
     display: flex;
     align-items: center;
     flex-shrink: 0;
-    margin-top: 300px;
+    margin-top: 280px;
     width: 300px;
     margin-right: -10px;
     z-index: 9999;
@@ -697,6 +697,13 @@ i.utbildning {
     width: 300px;
     font-size: 18px;
   }
+  .arbeteserfanhet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+  }
 
 
   #abouttext {
@@ -759,20 +766,22 @@ i.utbildning {
     text-align: center;
   }
   #motionsidovänsterknapp{
-    margin: 0;
+    margin: 0 auto;
+    
     height: 40px;
   
-   margin-bottom: 40px;
+   margin-bottom: 0;
+   margin-top: 5vh;
+   margin-bottom: 5vh;
     
   }
   #motionsidoknapp{
     margin: 0 auto;
-    margin-top: 15vh;
-    font-size: 30px;
-    width: 50px;
-    margin-bottom: 50px;
+    margin-top: 5vh;
+    
+    margin-bottom: 5vh;
   
-    height: 35px;
+    height: 40px;
     
   }
 
