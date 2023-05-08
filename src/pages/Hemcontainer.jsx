@@ -31,7 +31,7 @@ function Hemcontainer() {
     const container = document.getElementById("sidescroll2");
     const offset = 50;
     const x = element.getBoundingClientRect().left + window.pageXOffset - offset;
-  container.scrollTo({ left: x, behavior: "smooth" });
+    container.scrollTo({ left: x, behavior: "smooth" });
   };
 
 
@@ -156,9 +156,9 @@ function Hemcontainer() {
 
                   </p>
 
-                
 
-                  
+
+
 
                 </div>
 
@@ -189,10 +189,18 @@ function Hemcontainer() {
                     <div className='skills'>{language === 'en' ? "Swedish" : "Svenska"}</div>
                   </div>
                   <a id="motionsidoknapp" onClick={scrollToUtbildning}>
-                    <motion.div  
-                     whileTap={{ scale: 0.8 }}
-                     whileHover={{scale: 1.2}}
-                     >
+                    <motion.div
+                      whileTap={{ scale: 0.8 }}
+                      whileHover={{ scale: 1.2 }}
+                      animate={{
+                        x: [-10, 10, -10],
+                        transition: {
+                          duration: 1,
+                          repeat: Infinity,
+                          repeatType: "mirror",
+                        },
+                      }}
+                    >
                       <BsFillArrowRightCircleFill color='#facf0f' />
                     </motion.div>
                   </a>
@@ -213,13 +221,13 @@ function Hemcontainer() {
 
 
             <Styledutbildningsdiv id="utbildningdiv" >
-            
+
 
               <h1 style={{ margin: "0", marginTop: "80px", fontSize: "40px" }}>{language === 'en' ? "Experiences" : "Erfarenheter"}</h1>
               <span style={{ width: "28px", height: "6px", backgroundColor: "#facf0f", borderRadius: "5px", margin: "10px" }} ></span>
               <p style={{ margin: "0", fontSize: "18px", color: "gray" }}>{language === 'en' ? "My Education and workexperiences" : "Mina utbildningar och arbetserfarenhet"}</p>
               <div id="erfarenheter">
-              
+
                 <Styledutbildningsdiv1>
 
 
@@ -235,7 +243,7 @@ function Hemcontainer() {
                     <p className="utbildningarp"></p>
                     <i className='utbildning'>{language === 'en' ? "August 2011 - June 2014" : "Augusti 2011 - Juni 2014"}</i>
                   </div>
-                
+
                 </Styledutbildningsdiv1>
 
 
@@ -256,16 +264,24 @@ function Hemcontainer() {
 
 
                 </div>
-              
+
               </div>
               <a onClick={scrollToAbout} id="motionsidovänsterknapp">
-                    <motion.div  
-                     whileTap={{ scale: 0.8 }}
-                     whileHover={{scale: 1.2}}
-                     >
-                      <BsFillArrowLeftCircleFill color='#facf0f' />
-                    </motion.div>
-                  </a>
+                <motion.div
+                  whileTap={{ scale: 0.8 }}
+                  whileHover={{ scale: 1.2 }}
+                  animate={{
+                    x: [-10, 10, -10],
+                    transition: {
+                      duration: 1,
+                      repeat: Infinity,
+                      repeatType: "mirror",
+                    },
+                  }}
+                >
+                  <BsFillArrowLeftCircleFill color='#facf0f' />
+                </motion.div>
+              </a>
             </Styledutbildningsdiv>
 
           </Styledaboutsection>
@@ -285,8 +301,10 @@ function Hemcontainer() {
             <Styledkortcontainer>
               <div id="kort1" className='projektArbeten'></div>
               <h6 style={{ margin: 0 }}>{language === 'en' ? "E-commerce webbapplication" : "E-commerce webbapplikation"}</h6>
-              <motion.div whileTap={{ scale: 0.8 }}
-                whileHover={{ scale: 1.2 }}>
+              <motion.div
+                whileTap={{ scale: 0.8 }}
+                whileHover={{ scale: 1.2 }}
+               >
 
                 <Link className='projektknappar' to="/projectinfo1" >{language === 'en' ? "Read more" : "läs mer"}</Link>
               </motion.div>
@@ -348,9 +366,9 @@ function Hemcontainer() {
 
 
           <a href="mailto:jonaelghidey@hotmail.com" id='mail'>
-          <motion.div whileTap={{ scale: 0.8 }}
+            <motion.div whileTap={{ scale: 0.8 }}
               whileHover={{ scale: 1.2 }}>
-            <AiOutlineMail size={40} style={{ margin: 0, marginTop: "-1px" }} />
+              <AiOutlineMail size={40} style={{ margin: 0, marginTop: "-1px" }} />
 
             </motion.div>
           </a>
@@ -373,7 +391,7 @@ function Hemcontainer() {
 
 
         </Styledkontaktinfo>
-        
+
         <ScrollToTopButton />
       </Styledcontactdiv>
     </Styledonepagediv>
