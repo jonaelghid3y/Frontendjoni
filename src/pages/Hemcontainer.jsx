@@ -356,7 +356,7 @@ function Hemcontainer() {
             <motion.div whileTap={{ scale: 0.8 }}
               whileHover={{ scale: 1.2 }}>
 
-              <Link to="https://www.linkedin.com/in/jonael-ghidey-51a780239/">
+              <Link to="https://www.linkedin.com/in/jonael-ghidey-51a780239/" target="_blank">
                 <AiFillLinkedin style={{ color: "black" }} size={40} />
               </Link>
             </motion.div>
@@ -380,7 +380,7 @@ function Hemcontainer() {
               whileHover={{ scale: 1.2 }}>
 
 
-              <Link to="https://github.com/jonaelghid3y">
+              <Link to="https://github.com/jonaelghid3y" target="_blank">
                 <AiFillGithub style={{ margin: 0, marginTop: "1px" }} size={40} color='black' />
 
               </Link>
