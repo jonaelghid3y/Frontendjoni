@@ -406,7 +406,7 @@ font-weight: light;
 margin-top: 50px;
 scroll-snap-align: start;
 overflow: hidden;
-background: url(https://scontent-arn2-1.xx.fbcdn.net/v/t39.30808-6/345180972_937166210657806_49748210578292787_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=4Cxvgh7zESUAX_S0EBJ&_nc_ht=scontent-arn2-1.xx&oh=00_AfCqTdZ1_sL56TxK14jDjZmQETCcHxMBtGUFOWIoP673HQ&oe=64597DC0);
+background: url(https://i.imgur.com/kgnvSKY.jpg);
 background-size: cover;
 height: 92vh;
 width: 100%;
