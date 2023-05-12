@@ -32,7 +32,7 @@ const { language } = useContext(LanguageContext);
           <h1 id="projectinfo1h1" style={{ margin: 0 }}>{language === 'en' ? "Database-driven e-commerce web application" : "Databas driven e-commerce webbapplikation"}</h1>
           <div id="projectinfobild1">
 
-            <img id="projectinfoimg1" src='https://scontent-arn2-1.xx.fbcdn.net/v/t39.30808-6/345254347_891303118836834_2437115972998287238_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_ohc=u0WPn9lI0bIAX9lyPAL&_nc_ht=scontent-arn2-1.xx&oh=00_AfB2Q0eoAQOLmh1kZy1N6024up3PDKWTydoMolvBqjl71Q&oe=6459FC11' />
+            <img id="projectinfoimg1" src='https://i.imgur.com/lVnZ6Ig.jpg' />
 
           </div>
         </div>

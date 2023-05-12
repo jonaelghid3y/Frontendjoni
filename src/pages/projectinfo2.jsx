@@ -31,7 +31,7 @@ function projectinfo2() {
       <h1 id="projectinfo1h1" style={{ margin: 0 }}>{language === 'en' ? "API based movie-site" : "API baserad filmsida"}</h1>
       <div id="projectinfobild1">
 
-        <img id="projectinfoimg1" src='https://scontent-arn2-1.xx.fbcdn.net/v/t39.30808-6/345269283_194771572957483_3973452224333018862_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=730e14&_nc_ohc=636mVky4F7oAX_xz3Bp&_nc_ht=scontent-arn2-1.xx&oh=00_AfBCHNzTWdqwi9rmnPbGhYc1Ja3LQ65K6YDHEYlfCYJ8UA&oe=645A0DEE' />
+        <img id="projectinfoimg1" src='https://i.imgur.com/CK3oSUW.jpg' />
 
       </div>
       </div>
@@ -47,7 +47,7 @@ function projectinfo2() {
 
           </p>
 
-        <h4 style={{ margin: "0", fontSize: "20px" }}>skills: < ReactOriginal style={{ marginLeft: "10px" }} size={25} /><Css3Original style={{ marginLeft: "10px" }} size={25} /> <JavascriptOriginal style={{ marginLeft: "10px" }} size={25} /> <NodejsOriginal style={{ marginLeft: "10px" }} size={25} /><span style={{ margin: "0", marginLeft: "10px", fontWeight: "bold", fontSize: "20px" }}> FM, SC</span></h4>
+        <h4 style={{ margin: "0", fontSize: "20px" }}>skills: < ReactOriginal style={{ marginLeft: "10px" }} size={25} /><Css3Original style={{ marginLeft: "10px" }} size={25} /> <JavascriptOriginal style={{ marginLeft: "10px" }} size={25} /><span style={{ margin: "0", marginLeft: "10px", fontWeight: "bold", fontSize: "20px" }}> FM, SC</span></h4>
         <div className="demodiv">
         <motion.div whileTap={{ scale: 0.8 }}   whileHover={{ scale: 1.2 }}>
           <Link  to="https://movie-api-alpha-six.vercel.app/" target="_blank"className='livedemoknapp'> Live Demo
