@@ -91,7 +91,7 @@ function Hemcontainer() {
           transition={{ duration: 2 }}
           className="fadein"
         >
-          {language === 'en' ? "A passionate front-end developer, always seeking to expand my knowledge" : 'En passionerad frontend-utvecklare som alltid strävar efter att utvidga mina kunskaper.'}
+          {language === 'en' ? "A passionate front-end developer, always seeking to expand my knowledge" : 'En passionerad frontend-utvecklare som alltid strävar efter att utöka mina kunskaper.'}
         </motion.p>
 
         <motion.div
