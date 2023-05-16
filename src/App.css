@@ -94,11 +94,15 @@ html {
 
   margin: 0;
   margin-top: 250px;
+  font-size: 70px;
 }
 
 #hemcontainertext {
+  text-align: center;
   margin: 0;
   margin-top: 10px;
+  width: 700px;
+  font-size: 30px;
 }
 
 #projectknapp {
@@ -623,12 +627,15 @@ i.utbildning {
   #hemcontainertitel {
 
     margin: 0;
-    margin-top: 200px;
+    margin-top: 150px;
+    font-size: 40px;
   }
   
   #hemcontainertext {
     margin: 0;
     margin-top: 0px;
+    font-size: 20px;
+    
   }
   #hemcontainertitel {
     width: 300px;

@@ -91,7 +91,7 @@ function Hemcontainer() {
           transition={{ duration: 2 }}
           className="fadein"
         >
-          {language === 'en' ? 'A Front-end Developer that love to learn' : ' En frontend-utvecklare som älskar att lära mig'}
+          {language === 'en' ? "I'm a passionate front-end developer, always seeking to expand my knowledge" : 'Jag är en passionerad front-end-utvecklare som alltid strävar efter att utöka min kunskap.'}
         </motion.p>
 
         <motion.div
@@ -152,7 +152,7 @@ function Hemcontainer() {
 
                   <h2 id="aboutheader" >{language === 'en' ? "Get to know me!" : "Lär känna mig!"}</h2>
 
-                  <p style={{ marginBottom: "10px" }} id="abouttext" >{language === 'en' ? "I am  a self-driven frontend developer with experience in HTML, CSS, JavaScript, and React. I also have experience as a lead assembler and supervisor as an electrician, which has given me the ability to manage time and to priorities effectively, as well as lead and support a team. I believe that my passion and expertise as a frontend developer, combined with my leadership experience in other fields, make me an asset to your team." : "Jag är en självgående frontend-utvecklare med erfarenhet av HTML, CSS, JavaScript och React. Jag har också erfarenhet av att vara en ledande montör och arbetsledare som elektriker, vilket har gett mig förmågan att hantera tid och prioriteringar effektivt, liksom att leda och stödja ett team. Jag tror att min passion och kompetens som frontend-utvecklare, tillsammans med mina erfarenheter som ledare inom andra områden, gör mig till en tillgång för ditt team."}
+                  <p style={{ marginBottom: "10px" }} id="abouttext" >{language === 'en' ? "I'm a self-driven frontend developer with experience in HTML, CSS, JavaScript, and React. Previously, I worked as a lead assembler and supervisor in the electrical field, which taught me effective time management and the importance of being a supportive team player. I firmly believe that my passion for frontend development, coupled with my leadership experience, would make me a valuable asset to your team." : "Jag är en självgående front-end-utvecklare med erfarenhet av HTML, CSS, JavaScript och React. Tidigare har jag arbetat som ledande montör och handledare inom elektrikerbranschen, vilket har lärt mig effektiv tidsplanering och vikten av att vara en stödjande lagspelare. Jag är övertygad om att min passion för front-end-utveckling, tillsammans med min erfarenhet av ledarskap, skulle göra mig till en värdefull tillgång för ert team."}
 
                   </p>
 
