@@ -76,7 +76,7 @@ function Hemcontainer() {
 
         <Språkknapp />
         <motion.h1
-          style={{ marginTop: "200px", fontWeight: "bold" }}
+          style={{fontWeight: "bold" }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 2 }}
@@ -143,7 +143,7 @@ function Hemcontainer() {
             <Styledabouttextdiv style={{ backgroundColor: "rgb(245, 245, 245)" }}>
 
               <h1 id="abouth1" style={{ margin: "0", marginTop: "80px" }}>{language === 'en' ? "About me" : "Om mig"}</h1>
-              <span style={{ width: "30px", height: "8px", backgroundColor: "#facf0f", borderRadius: "5px", margin: "10px" }} ></span>
+              <span style={{ width: "30px", height: "6px", backgroundColor: "#facf0f", borderRadius: "5px", margin: "10px" }} ></span>
               <p id="aboutp" style={{ fontSize: "18px" }}>{language === 'en' ? "Here you can find out more about my skills in programming, as well as my education and work experience by scrolling to the right." : "Ta reda på mer om mig, mina färdigheter inom programmering, samt min utbildning och arbetslivserfarenhet genom att scrolla till höger."}</p>
 
 
@@ -293,7 +293,7 @@ function Hemcontainer() {
         <Styledvälkommendiv>
 
           <h1 id='projekth1'>{language === 'en' ? "Projects" : "Projekt"}</h1>
-          <span style={{ width: "30px", height: "5px", backgroundColor: "#facf0f", borderRadius: "5px", margin: "10px" }} > </span>
+          <span style={{ width: "30px", height: "4px", backgroundColor: "#facf0f", borderRadius: "5px", margin: "10px" }} > </span>
           <p id="projektinfo" >{language === 'en' ? " Welcome to my portfolio page, showcasing my skills in HTML, CSS, JavaScript, React, and Node.js. Along with my personal web portfolio, here are some of my favorite projects that I have created. I am constantly working on new projects and will update this section as I develop more exciting ones"
             : "Välkommen till min portföljsida, där jag visar upp mina färdigheter i HTML, CSS, JavaScript, React och Node.js. Utöver min personliga webbportfölj, här är några av mina favoritprojekt som jag har skapat. Jag arbetar kontinuerligt med nya projekt och kommer att uppdatera den här sektionen allt eftersom jag utvecklar fler spännande projekt."} </p>
 
@@ -317,7 +317,7 @@ function Hemcontainer() {
               <h6 style={{ margin: 0 }}>{language === 'en' ? "API based moviesite" : "API baserad filmsida"}</h6>
               <motion.div whileTap={{ scale: 0.8 }}
                 whileHover={{ scale: 1.2 }}>
-                <Link className='projektknappar' to="/projectinfo2">{language === 'en' ? "Read more" : "läs mer"}</Link>
+                <Link className='projektknappar' to="/projectinfo2">{language === 'en' ? "Read more" : "Läs mer"}</Link>
               </motion.div>
 
 
@@ -328,7 +328,7 @@ function Hemcontainer() {
               <h6 style={{ margin: 0 }}>Netflix clone<span style={{ color: "red" }}> (coming soon)</span></h6>
               <motion.div whileTap={{ scale: 0.8 }}
                 whileHover={{ scale: 1.2 }}>
-                <Link className='projektknappar'>{language === 'en' ? "Read more" : "läs mer"}</Link>
+                <Link className='projektknappar'>{language === 'en' ? "Read more" : "Läs mer"}</Link>
               </motion.div>
 
             </Styledkortcontainer>
@@ -338,7 +338,7 @@ function Hemcontainer() {
 
       <Styledcontactdiv id="contactdiv">
 
-        <h1 style={{ margin: "0", marginTop: "50px", fontSize: "50px" }}>Contact</h1>
+        <h1 style={{ margin: "0", marginTop: "50px", fontSize: "40px" }}>{language === 'en' ? "Contact" : "Kontakt"}</h1>
         <span style={{ width: "30px", height: "4px", backgroundColor: "#facf0f", borderRadius: "5px", margin: "10px" }} ></span>
         <p id="contactp">{language === 'en' ? "Thank you for visiting my portfolio! For work collaboration or other inquiries, please feel free to reach out to me via email at jonaelghidey@hotmail.com. You can also check out my projects and code on my Github profile or read more about my experience and background on my LinkedIn page. I look forward to hearing from you!" : "Tack för att du besöker min portfolio! För arbets- eller samarbetsfrågor, kontakta mig via jonaelghidey@hotmail.com. Du kan också se mina projekt på Github och min erfarenhet på LinkedIn. Ser fram emot att höra från dig!"}</p>
 

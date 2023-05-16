@@ -98,7 +98,7 @@ function Header() {
           id="Projects"
           className={`länkar ${activeLink === '#Projectcontainer' ? 'active' : ''}`}
         >
-          {language === 'en' ? 'Project' : 'Projekt'}
+          {language === 'en' ? 'Projects' : 'Projekt'}
         </Link>
         </motion.div>
         <motion.div whileTap={{ scale: 0.9 }}>
@@ -142,6 +142,7 @@ const Styledimg = styled.img`
   border-radius: 50%;
   max-height: 60px;
   max-width: 60px;
+  
   
   @media (max-width: 768px) {
 

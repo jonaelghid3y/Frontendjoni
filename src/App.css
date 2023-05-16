@@ -93,15 +93,16 @@ html {
 #hemcontainertitel {
 
   margin: 0;
-  margin-top: 100px;
+  margin-top: 250px;
 }
 
 #hemcontainertext {
   margin: 0;
+  margin-top: 10px;
 }
 
 #projectknapp {
-  margin-top: 100px;
+  margin-top: 120px;
   border-radius: 5px;
   text-decoration: none;
   display: flex;
@@ -618,6 +619,16 @@ i.utbildning {
   .länkar {
     font-size: 24px;
     margin: 10px 0;
+  }
+  #hemcontainertitel {
+
+    margin: 0;
+    margin-top: 200px;
+  }
+  
+  #hemcontainertext {
+    margin: 0;
+    margin-top: 0px;
   }
   #hemcontainertitel {
     width: 300px;
