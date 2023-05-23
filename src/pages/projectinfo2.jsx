@@ -49,11 +49,11 @@ function projectinfo2() {
 
         <h4 style={{ margin: "0", fontSize: "20px" }}>skills: < ReactOriginal style={{ marginLeft: "10px" }} size={25} /><Css3Original style={{ marginLeft: "10px" }} size={25} /> <JavascriptOriginal style={{ marginLeft: "10px" }} size={25} /><span style={{ margin: "0", marginLeft: "10px", fontWeight: "bold", fontSize: "20px" }}> FM, SC</span></h4>
         <div className="demodiv">
-        <motion.div whileTap={{ scale: 0.8 }}   whileHover={{ scale: 1.2 }}>
+        {/* <motion.div whileTap={{ scale: 0.8 }}   whileHover={{ scale: 1.2 }}>
           <Link  to="https://movie-api-alpha-six.vercel.app/" target="_blank"className='livedemoknapp'> Live Demo
 
           </Link>
-          </motion.div>
+          </motion.div> */}
           <motion.div whileTap={{ scale: 0.8 }}   whileHover={{ scale: 1.2 }}>
           <Link className="länkar2" style={{}} to="https://github.com/jonaelghid3y/Movie-API" target="_blank">
             <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
