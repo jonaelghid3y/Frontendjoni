@@ -230,9 +230,9 @@ html {
 .sliderdiv {
 
 padding: 50px;
- background-color: #e9e5e5;
+ background-color: #f1f1f1;
   
- height: 86vh;
+ min-height: 86vh;
   max-width: 100%;
   display: flex;
   justify-content: flex-start;

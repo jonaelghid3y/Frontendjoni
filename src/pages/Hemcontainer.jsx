@@ -60,7 +60,7 @@ function Hemcontainer() {
   ];
 
   const iconComponents = ids.map((id, index) => (
-    <motion.div key={id} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
+    <motion.div key={id} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
       {icons[index].icon}
     </motion.div>
   ));
@@ -79,7 +79,7 @@ function Hemcontainer() {
           style={{fontWeight: "bold" }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 2 }}
+          transition={{ duration: 3 }}
           id="hemcontainertitel"
         >
           {language === 'en' ? "HEY, I'M JONAEL GHIDEY" : "Hej, jag är Jonael Ghidey"}

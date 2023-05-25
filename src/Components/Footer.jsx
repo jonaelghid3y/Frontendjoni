@@ -49,7 +49,7 @@ function Footer() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={
                         isVisible
-                            ? { opacity: 1, y: 0, transition: { delay: id * 0.2 } }
+                            ? { opacity: 1, y: 0, transition: { delay: id * 0.5 } }
                             : {}
                     }
                 >
