@@ -93,7 +93,7 @@ html {
 #hemcontainertitel {
 
   margin: 0;
-  margin-top: 250px;
+  margin-top: 200px;
   font-size: 65px;
 }
 
@@ -106,7 +106,7 @@ html {
 }
 
 #projectknapp {
-  margin-top: 120px;
+  margin-top: 100px;
   border-radius: 5px;
   text-decoration: none;
   display: flex;
