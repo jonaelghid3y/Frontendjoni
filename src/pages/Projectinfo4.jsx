@@ -59,7 +59,7 @@ const { language } = useContext(LanguageContext);
             </motion.div>
 
             <motion.div whileTap={{ scale: 0.8 }}   whileHover={{ scale: 1.2 }}>
-            <Link className="länkar2" style={{}} to="https://github.com/jonaelghid3y/Brokenrecords" target="_blank">
+            <Link className="länkar2" style={{}} to="https://github.com/jonaelghid3y/Brokenrecords2" target="_blank">
               <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
                 <p style={{ margin: 0 }}> Repository</p>
                 <AiFillGithub color='black' size={30} style={{ marginTop: "" }} />
