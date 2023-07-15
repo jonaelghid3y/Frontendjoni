@@ -587,11 +587,11 @@ margin: 0
 const Styledprojectcontainer = styled.div`
 padding-bottom: 50px;
 margin-top: -5px;
-scroll-snap-align: start;
+
 border: 1px solid rgb(232, 232, 232);
 background-color: rgb(255, 255, 255);
 min-height: 81vh;
-width: 99.9%;
+width: 99%;
 background-size: cover;
 font-size: 30px;
 display: flex;
@@ -623,7 +623,7 @@ scroll-behavior: smooth;
 const Styledvälkommendiv = styled.div`
 
 height: 100%;
-width: 95vw;
+width: 90vw;
 display: flex;
 align-items: center;
 justify-content: flex-start;
@@ -637,7 +637,7 @@ flex-direction: column;
 
 const Styledkortcontainer = styled.div`
 
-width: 45h;
+width: 100%;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -647,7 +647,7 @@ margin-bottom: 20px;
 
 @media (max-width: 768px) {
 
-  width: 46vh;
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -662,14 +662,15 @@ const Styledprojectkort = styled.div`
 
 margin-top: 100px;
 height: 100%;
-width: 95vw;
+width: 99%;
+padding:20px;
 
 gap: 70px;
 
 @media (max-width: 768px) {
   margin-top: 100px;
   height: 100%;
-  width: 300px
+ 
   gap: 70px;
 
   }
