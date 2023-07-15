@@ -27,7 +27,7 @@ function Header() {
             block: 'start',
           });
         }
-      }, 50); // 50ms delay before scrolling to allow time for page to render
+      }, 50); 
     };
 
 
@@ -50,16 +50,16 @@ function Header() {
 
   return (
 
-    <Styledheadercontainer >
+    <Styledheadercontainer id="header">
       <StyledProfilbild >
         <Styledimg src='https://i.imgur.com/yGvfOYI.jpg' alt='Profile' />
         <StyledNamn id="Namn">Jonael Ghidey</StyledNamn>
       </StyledProfilbild>
-      <div className={`hamburger ${showMenu ? 'open' : ''}`} onClick={toggleMenu}>
-        <div className="hamburger-line"></div>
-        <div className="hamburger-line"></div>
-        <div className="hamburger-line"></div>
-      </div>
+<div className={`hamburger ${showMenu ? 'open' : ''}`} onClick={toggleMenu}>
+  <div className="hamburger-line"></div>
+  <div className="hamburger-line"></div>
+  <div className="hamburger-line"></div>
+</div>
       <nav id="nav" className={`${showMenu ? 'open' : ''}`}>
       <motion.div whileTap={{ scale: 0.9 }}>
 
@@ -156,7 +156,7 @@ const Styledimg = styled.img`
 
 `;
 const StyledProfilbild = styled.div`
-width: 400px;
+width: 300px;
 height: 100px;
 margin-left: 50px;
 display: flex;

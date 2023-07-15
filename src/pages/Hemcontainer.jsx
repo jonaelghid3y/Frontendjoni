@@ -14,6 +14,9 @@ import ScrollToTopButton from '../Components/ScrollToTopButton'
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import { AnimatePresence, motion, useScroll } from 'framer-motion';
 import styled, { css } from 'styled-components';
+import Slider from 'react-slick'
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 
 
@@ -65,6 +68,23 @@ function Hemcontainer() {
     </motion.div>
   ));
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3, // Number of slides to show at a time
+    draggable: true,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1, // Number of slides to show on mobile devices
+        },
+      },
+    ],
+  };
+
 
 
   return (
@@ -76,7 +96,7 @@ function Hemcontainer() {
 
         <Språkknapp />
         <motion.h1
-          style={{fontWeight: "bold" }}
+          style={{ fontWeight: "bold" }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 3 }}
@@ -298,40 +318,54 @@ function Hemcontainer() {
             : "Välkommen till min portföljsida, där jag visar upp mina färdigheter i HTML, CSS, JavaScript, React och Node.js. Utöver min personliga webbportfölj, här är några av mina favoritprojekt som jag har skapat. Jag arbetar kontinuerligt med nya projekt och kommer att uppdatera den här sektionen allt eftersom jag utvecklar fler spännande projekt."} </p>
 
           <Styledprojectkort>
-            <Styledkortcontainer>
-              <div id="kort1" className='projektArbeten'></div>
-              <h6 style={{ margin: 0 }}>{language === 'en' ? "E-commerce webbapplication" : "E-commerce webbapplikation"}</h6>
-              <motion.div
-                whileTap={{ scale: 0.8 }}
-                whileHover={{ scale: 1.2 }}
-               >
+           
+              <Slider  {...settings}>
+                <div>
+                  <Styledkortcontainer>
+                    <div id="kort4" className='projektArbeten'></div>
+                    <h6 style={{ margin: 0 }}>{language === 'en' ? "E-commerce webbapplication 2.0" : "E-commerce webbapplikation 2.0"}</h6>
+                    <motion.div
+                      whileTap={{ scale: 0.8 }}
+                      whileHover={{ scale: 1.2 }}
+                    >
+                      <Link className='projektknappar' to="/projectinfo4" >{language === 'en' ? "Read more" : "läs mer"}</Link>
+                    </motion.div>
+                  </Styledkortcontainer>
+                </div>
+                <div>
+                  <Styledkortcontainer>
+                    <div id="kort1" className='projektArbeten'></div>
+                    <h6 style={{ margin: 0 }}>{language === 'en' ? "E-commerce webbapplication" : "E-commerce webbapplikation"}</h6>
+                    <motion.div
+                      whileTap={{ scale: 0.8 }}
+                      whileHover={{ scale: 1.2 }}
+                    >
+                      <Link className='projektknappar' to="/projectinfo1" >{language === 'en' ? "Read more" : "läs mer"}</Link>
+                    </motion.div>
+                  </Styledkortcontainer>
+                </div>
+                <div>
+                  <Styledkortcontainer>
+                    <div id="kort3" className='projektArbeten'></div>
+                    <h6 style={{ margin: 0 }}>Netflix clone<span style={{ color: "red" }}> (coming soon)</span></h6>
+                    <motion.div whileTap={{ scale: 0.8 }} whileHover={{ scale: 1.2 }}>
+                      <Link className='projektknappar'>{language === 'en' ? "Read more" : "Läs mer"}</Link>
+                    </motion.div>
+                  </Styledkortcontainer>
+                </div>
+                <div>
+                  <Styledkortcontainer>
+                    <div id="kort2" className='projektArbeten'></div>
+                    <h6 style={{ margin: 0 }}>{language === 'en' ? "API based moviesite" : "API baserad filmsida"}</h6>
+                    <motion.div whileTap={{ scale: 0.8 }} whileHover={{ scale: 1.2 }}>
+                      <Link className='projektknappar' to="/projectinfo2">{language === 'en' ? "Read more" : "Läs mer"}</Link>
+                    </motion.div>
+                  </Styledkortcontainer>
+                </div>
+              </Slider>
+         
 
-                <Link className='projektknappar' to="/projectinfo1" >{language === 'en' ? "Read more" : "läs mer"}</Link>
-              </motion.div>
 
-
-            </Styledkortcontainer>
-            <Styledkortcontainer>
-              <div id="kort2" className='projektArbeten'></div>
-
-              <h6 style={{ margin: 0 }}>{language === 'en' ? "API based moviesite" : "API baserad filmsida"}</h6>
-              <motion.div whileTap={{ scale: 0.8 }}
-                whileHover={{ scale: 1.2 }}>
-                <Link className='projektknappar' to="/projectinfo2">{language === 'en' ? "Read more" : "Läs mer"}</Link>
-              </motion.div>
-
-
-            </Styledkortcontainer>
-            <Styledkortcontainer>
-              <div id="kort3" className='projektArbeten'></div>
-
-              <h6 style={{ margin: 0 }}>Netflix clone<span style={{ color: "red" }}> (coming soon)</span></h6>
-              <motion.div whileTap={{ scale: 0.8 }}
-                whileHover={{ scale: 1.2 }}>
-                <Link className='projektknappar'>{language === 'en' ? "Read more" : "Läs mer"}</Link>
-              </motion.div>
-
-            </Styledkortcontainer>
           </Styledprojectkort>
         </Styledvälkommendiv>
       </Styledprojectcontainer>
@@ -589,7 +623,7 @@ scroll-behavior: smooth;
 const Styledvälkommendiv = styled.div`
 
 height: 100%;
-width: 100%;
+width: 95vw;
 display: flex;
 align-items: center;
 justify-content: flex-start;
@@ -608,6 +642,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 flex-direction: column;
+margin-bottom: 20px;
 
 
 @media (max-width: 768px) {
@@ -617,6 +652,8 @@ flex-direction: column;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 20px;
+
 
 
   }
@@ -625,22 +662,14 @@ const Styledprojectkort = styled.div`
 
 margin-top: 100px;
 height: 100%;
-width: 100%;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-flex-direction: row;
+width: 95vw;
+
 gap: 70px;
 
 @media (max-width: 768px) {
   margin-top: 100px;
   height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: column;
+  width: 300px
   gap: 70px;
 
   }

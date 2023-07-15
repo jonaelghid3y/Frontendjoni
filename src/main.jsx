@@ -14,6 +14,7 @@ import {
 
 import Projectinfo1 from './pages/Projectinfo1'
 import Projectinfo2 from './pages/projectinfo2'
+import Projectinfo4 from './pages/Projectinfo4'
 
 
 const router = createBrowserRouter([
@@ -33,6 +34,11 @@ const router = createBrowserRouter([
       {
         path: "/Projectinfo2",
         element: <Projectinfo2/>,
+        
+      },
+      {
+        path: "/Projectinfo4",
+        element: <Projectinfo4/>,
         
       }
      

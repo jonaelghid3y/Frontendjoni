@@ -7,7 +7,7 @@ import LanguageProvider from '../Components/LanguageProvider';
 const Root = () => {
   const { pathname } = useLocation();
 
-  const shouldRenderHeaderFooter = !['/projectinfo1', '/projectinfo2'].includes(pathname);
+  const shouldRenderHeaderFooter = !['/projectinfo1', '/projectinfo2', '/projectinfo4'].includes(pathname);
   console.log('shouldRenderHeaderFooter:', shouldRenderHeaderFooter);
   console.log('pathname:', pathname);
 
