@@ -15,6 +15,7 @@ import {
 import Projectinfo1 from './pages/Projectinfo1'
 import Projectinfo2 from './pages/projectinfo2'
 import Projectinfo4 from './pages/Projectinfo4'
+import Projectinfo5 from './pages/Projectinfo5'
 
 
 const router = createBrowserRouter([
@@ -39,6 +40,11 @@ const router = createBrowserRouter([
       {
         path: "/Projectinfo4",
         element: <Projectinfo4/>,
+        
+      },
+      {
+        path: "/Projectinfo5",
+        element: <Projectinfo5/>,
         
       }
      

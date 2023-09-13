@@ -3,6 +3,7 @@ import { LanguageContext } from './LanguageContext';
 import { Link } from 'react-scroll';
 import styled, { css } from 'styled-components';
 import { motion } from 'framer-motion';
+import { FaBars } from 'react-icons/fa';
 
 function Header() {
   const { language } = useContext(LanguageContext);
@@ -28,6 +29,7 @@ function Header() {
           });
         }
       }, 50); 
+      setShowMenu(false);
     };
 
 
@@ -55,11 +57,7 @@ function Header() {
         <Styledimg src='https://i.imgur.com/yGvfOYI.jpg' alt='Profile' />
         <StyledNamn id="Namn">Jonael Ghidey</StyledNamn>
       </StyledProfilbild>
-<div className={`hamburger ${showMenu ? 'open' : ''}`} onClick={toggleMenu}>
-  <div className="hamburger-line"></div>
-  <div className="hamburger-line"></div>
-  <div className="hamburger-line"></div>
-</div>
+      <FaBars className="hamburger" onClick={toggleMenu} />
       <nav id="nav" className={`${showMenu ? 'open' : ''}`}>
       <motion.div whileTap={{ scale: 0.9 }}>
 

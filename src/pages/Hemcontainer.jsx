@@ -334,6 +334,15 @@ function Hemcontainer() {
                 </div>
                 <div>
                   <Styledkortcontainer>
+                    <div id="kort3" className='projektArbeten'></div>
+                    <h6 style={{ margin: 0 }}>3D mode sida</h6>
+                    <motion.div whileTap={{ scale: 0.8 }} whileHover={{ scale: 1.2 }}>
+                      <Link  to="/projectinfo5"  className='projektknappar'>{language === 'en' ? "Read more" : "Läs mer"}</Link>
+                    </motion.div>
+                  </Styledkortcontainer>
+                </div>
+                <div>
+                  <Styledkortcontainer>
                     <div id="kort1" className='projektArbeten'></div>
                     <h6 style={{ margin: 0 }}>{language === 'en' ? "E-commerce webbapplication" : "E-commerce webbapplikation"}</h6>
                     <motion.div
@@ -344,15 +353,7 @@ function Hemcontainer() {
                     </motion.div>
                   </Styledkortcontainer>
                 </div>
-                <div>
-                  <Styledkortcontainer>
-                    <div id="kort3" className='projektArbeten'></div>
-                    <h6 style={{ margin: 0 }}>Netflix clone<span style={{ color: "red" }}> (coming soon)</span></h6>
-                    <motion.div whileTap={{ scale: 0.8 }} whileHover={{ scale: 1.2 }}>
-                      <Link className='projektknappar'>{language === 'en' ? "Read more" : "Läs mer"}</Link>
-                    </motion.div>
-                  </Styledkortcontainer>
-                </div>
+                
                 <div>
                   <Styledkortcontainer>
                     <div id="kort2" className='projektArbeten'></div>
@@ -591,7 +592,7 @@ margin-top: -5px;
 border: 1px solid rgb(232, 232, 232);
 background-color: rgb(255, 255, 255);
 min-height: 81vh;
-width: 99%;
+width: 99.8%;
 background-size: cover;
 font-size: 30px;
 display: flex;
@@ -711,7 +712,7 @@ background-color: rgb(245, 245, 245);
 overflow: hidden;
 padding-bottom: 80px;
 min-height: 65vh;
-width: 99.9%;
+width: 100%;
 background-size: cover;
 display: flex;
 align-items: center;

@@ -206,10 +206,10 @@ html {
 }
 
 #kort3 {
-  background-image: url(https://i.imgur.com/ovUVBo2.jpg);
-  filter: blur(2px);
-  background-size: contain;
-  background-position: -5px;
+  background-image: url(https://i.imgur.com/z9yELRo.png);
+ 
+  background-size: cover;
+  background-position: center;
 }
 
 #projektbild {
@@ -267,7 +267,7 @@ padding: 50px;
 #projectinfo1kort{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
 }
 #projectinfobild1{
