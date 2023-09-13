@@ -193,6 +193,10 @@ function Hemcontainer() {
                     <div className='skills'>Css</div>
                     <div className='skills'>React</div>
                     <div className='skills'>Nodejs</div>
+                    <div className='skills'>React native</div>
+                    <div className='skills'>Three JS</div>
+                    <div className='skills'>Blender</div>
+                    <div className='skills'>Testning</div>
 
                     <div className='skills'>Figma</div>
                     <div className='skills'>Bootstrap</div>
